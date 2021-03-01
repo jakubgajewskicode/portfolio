@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { device } from '../../utils/media';
 
 export const Overlay = styled.div`
-  display: ${({ state }) => (state === true ? `block` : `none`)};
-
   position: fixed;
   top: 0;
   background-color: #000000;
