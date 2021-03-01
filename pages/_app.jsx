@@ -24,8 +24,8 @@ function MyApp({ Component, pageProps }) {
       <PageLayout>
         <MainHeader setBarState={setBarState} barState={barState} />
         <Component barState={barState} {...pageProps} />
-        <OverlayLayer setBarState={setBarState} barState={barState} />
       </PageLayout>
+      <OverlayLayer setBarState={setBarState} barState={barState} />
     </>
   );
 }
