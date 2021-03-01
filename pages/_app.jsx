@@ -10,7 +10,7 @@ import OverlayLayer from '../components/OverlayLayer';
 
 const PageLayout = styled.div`
   box-sizing: border-box;
-  height: 100vh;
+  height: 100%;
   position: relative;
   width: 90%;
   margin: 0 auto;
