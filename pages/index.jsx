@@ -10,8 +10,13 @@ export default function Home() {
     <>
       <Head>
         <title>Jakub Gajewski</title>
+        <meta charSet="utf-8" />
         <link rel="icon" href="/fav.png" />
         <meta name="portfolio" content="web development, programming, front-end developer" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+        />
       </Head>
 
       <Body />
