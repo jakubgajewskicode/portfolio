@@ -32,9 +32,10 @@ export const Hamburger = styled.div`
   z-index: 10;
 `;
 
-export const TopBar = styled.div`
+export const TopBar = styled.span`
   width: 100%;
   height: 1px;
+  margin-top: 1px;
   z-index: 10;
   background-color: ${({ topChanged }) => (topChanged === true ? `#ffffff;` : `#000;`)};
   transition: transform 400ms cubic-bezier(0.8, 0, 0.55, 0.94),
@@ -44,7 +45,7 @@ export const TopBar = styled.div`
     topChanged === true ? `translate3d(-5px, 3px, 0) rotate(-45deg)` : `translate3d(0, 10px, 0)`};
 `;
 
-export const BottomBar = styled.div`
+export const BottomBar = styled.span`
   width: 100%;
   height: 1px;
   z-index: 10;
