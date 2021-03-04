@@ -37,7 +37,7 @@ export default css`
     font-size: 20px;
     color: #fff;
     display: block;
-    font-family: revicons;
+    font-family: sans-serif;
     text-align: center;
     z-index: 2;
     position: relative;

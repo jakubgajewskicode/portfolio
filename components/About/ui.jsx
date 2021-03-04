@@ -89,7 +89,7 @@ export const StyledBody = styled.div`
   }
 `;
 
-export const Body = styled.p`
+export const Body = styled.div`
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 0.02em;
@@ -152,10 +152,6 @@ export const LeftItem = styled.aside`
   margin: 0;
   opacity: 0;
 
-  /* svg {
-		height: 100%;
-		width: 100%;
-	} */
   @media ${device.mobileS} {
     display: none;
   }
@@ -179,9 +175,30 @@ export const UL = styled.ul`
   cursor: pointer;
   padding: 0;
   justify-content: space-around;
+  margin-top: 50px;
 `;
 export const LI = styled.li`
   a {
     color: black;
+  }
+
+  :hover {
+    a {
+      opacity: 0.3;
+    }
+  }
+`;
+
+export const MainBody = styled(Body)`
+  margin-top: 20px;
+`;
+
+export const StyledAnchor = styled.a`
+  color: black;
+  text-decoration: none;
+
+  :hover {
+    opacity: 0.5;
+    text-decoration: underline;
   }
 `;

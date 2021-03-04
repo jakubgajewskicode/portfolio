@@ -20,6 +20,7 @@ const StyledAnchor = styled.a`
 
   :hover {
     opacity: 0.5;
+    text-decoration: underline;
   }
 `;
 
@@ -36,10 +37,9 @@ const MainBody = () => {
         </StyledHeader>
         <StyledBody>
           <Body>
-            I’m a passionate full-time front-end developer with over a year of in-house experience
-            at
+            I’m a passionate, self-taught front-end developer, currently working full time for&nbsp;
             <Link passHref href="https://www.rapha.cc/">
-              <StyledAnchor> Rapha Racing</StyledAnchor>
+              <StyledAnchor>Rapha Racing</StyledAnchor>
             </Link>
             . I strive to create visually appealing sites that feature user and developer friendly
             environments.

@@ -14,6 +14,12 @@ export const H3 = styled.h3`
   z-index: 2;
   margin: 0;
 
+  :hover {
+    a {
+      opacity: 0.5;
+    }
+  }
+
   a {
     text-decoration: none;
     color: ${({ colorTitle }) => (colorTitle === true ? `#ffffff` : `#000000`)};
