@@ -19,8 +19,7 @@ import {
   StyledBody,
   UL,
   LI,
-  MainBody,
-  StyledAnchor
+  MainBody
 } from './ui';
 
 const AboutPage = () => {
@@ -32,39 +31,18 @@ const AboutPage = () => {
           <H1>Front End Developer living in Hackney, London.</H1>
         </StyledHeader>
         <StyledBody>
-          <Body>
-            Currently working full time on&nbsp;
-            <Link passHref href="https://www.rapha.cc/">
-              <StyledAnchor>Rapha&apos;s Racing </StyledAnchor>
-            </Link>
-            front end new e-commerce project. Starting from designs systems and creating mobile
-            first UI to engineering part which means integrating them into our data structure:
-            Contentful API via GraphQL.
-          </Body>
+          <Body>Hey, I am Jakub Gajewski.</Body>
           <MainBody>
-            I currently most passion about:
-            <ul>
-              <li>JavaScript ES6</li>
-              <li> React</li>
-              <li>Typescript</li>
-              <li>GraphQL</li>
-              <li> Contentful</li>
-              <li>Next.js</li>
-            </ul>
-            Other skills include: HTML5 &amp; CSS3, Jest Testing, Styled-Components, Responsive Web
-            Design, Building UI Components, GraphQL schemas, Storybook, Sketch, Docker, Google
-            Analytics, GSAP, Accessibility standards and tools.
+            I am professional front end developer since January 2019. My passion for digital
+            technology continually drives me to advance my skill set as a software developer. With
+            an analytical mindset and strong communication and front end development skills, I
+            thrive in environments where I can learn from others and develop my my coding skills
+            further.
           </MainBody>
-          <MainBody>
-            I’m always focused in developing my skills further, and use them to improve my coding
-            skills.
-          </MainBody>
-
           <MainBody>
             I have huge passion for cycling so when I am not in the office you can find me on road
             or gravel cycle lanes in Essex or Kent.
           </MainBody>
-
           <UL>
             <LI>
               <Link target="_blank" passHref href="mailto:jakub.gajewski@yahoo.com">

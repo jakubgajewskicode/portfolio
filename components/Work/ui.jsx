@@ -99,11 +99,11 @@ export const Body = styled.div`
 
   @media ${device.tablet} {
     font-size: 14px;
-    margin: 40px 20px 20px 100px;
+    margin: 25px 20px 20px 80px;
   }
 
   @media ${device.laptop} {
-    margin: 80px 20px 20px 100px;
+    margin: 25px 20px 20px 80px;
   }
 `;
 
@@ -304,5 +304,15 @@ export const CarouselWrapper = styled.section`
       right: calc(1% + 1px);
       bottom: unset;
     }
+  }
+`;
+
+export const StyledAnchor = styled.a`
+  color: black;
+  text-decoration: none;
+
+  :hover {
+    opacity: 0.5;
+    text-decoration: underline;
   }
 `;

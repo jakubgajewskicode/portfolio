@@ -176,6 +176,10 @@ export const UL = styled.ul`
   padding: 0;
   justify-content: space-around;
   margin-top: 50px;
+
+  @media ${device.tablet} {
+    margin-left: 70px;
+  }
 `;
 export const LI = styled.li`
   a {
