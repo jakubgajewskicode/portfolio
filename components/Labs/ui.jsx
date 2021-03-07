@@ -81,6 +81,7 @@ export const H5 = styled.h5`
 `;
 
 export const StyledBody = styled.div`
+  margin-top: 30px;
   opacity: 0;
 
   @media ${device.mobileS} {
@@ -89,7 +90,7 @@ export const StyledBody = styled.div`
   }
 `;
 
-export const Body = styled.p`
+export const Body = styled.div`
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 0.02em;
@@ -99,11 +100,11 @@ export const Body = styled.p`
 
   @media ${device.tablet} {
     font-size: 14px;
-    margin: 40px 20px 20px 100px;
+    margin: 40px 20px 20px 60px;
   }
 
   @media ${device.laptop} {
-    margin: 80px 20px 20px 100px;
+    margin: 40px 20px 20px 60px;
   }
 `;
 

@@ -82,6 +82,7 @@ export const H5 = styled.h5`
 
 export const StyledBody = styled.div`
   opacity: 0;
+  margin-top: 30px;
 
   @media ${device.mobileS} {
     animation: 1.7s ${fadeIn} cubic-bezier(0.8, 0, 0.55, 0.94);

@@ -36,7 +36,7 @@ const AboutPage = () => {
             I am professional front end developer since January 2019. My passion for digital
             technology continually drives me to advance my skill set as a software developer. With
             an analytical mindset and strong communication and front end development skills, I
-            thrive in environments where I can learn from others and develop my my coding skills
+            thrive in environments where I can learn from others and develop my coding skills
             further.
           </MainBody>
           <MainBody>

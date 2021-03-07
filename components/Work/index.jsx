@@ -131,22 +131,32 @@ const WorkPage = ({ barState }) => {
               <RightItem>
                 <StyledHeader>
                   <H5>side projects</H5>
-                  <H1>Co tutaj ?</H1>
+                  <H1>Apps</H1>
                 </StyledHeader>
                 <StyledBody>
                   <Body>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi impedit odit
-                    non, eos rerum magnam molestias sunt iusto maiores velit error nisi omnis vero
-                    aut! Facilis debitis exercitationem culpa.
+                    Current portofolio website
+                    <ul>
+                      <li>React on Next.js. Server-side rendered</li>
+                      <li>Design by Myself</li>
+                      <li>
+                        Ilustrations by&nbsp;
+                        <Link passHref href="https://absurd.design/">
+                          <StyledAnchor>Absurd Design</StyledAnchor>
+                        </Link>
+                      </li>
+                    </ul>
                   </Body>
                   <Body>
-                    Tech stack in which I am hugly involved:
+                    Newsletter Blog
                     <ul>
-                      <li>React</li>
-                      <li>Next.js</li>
-                      <li>GraphQL</li>
-                      <li>Contentful</li>
-                      <li>Storybook</li>
+                      <li>Contentful CMS with Gatsby build</li>
+                    </ul>
+                  </Body>
+                  <Body>
+                    Messenger App
+                    <ul>
+                      <li>React / Firebase</li>
                     </ul>
                   </Body>
                 </StyledBody>

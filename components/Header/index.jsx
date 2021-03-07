@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Header, H3, StyledHamburger, Hamburger, TopBar, BottomBar } from './ui';
+import { Header, H3, Hamburger, TopBar, BottomBar } from './ui';
 
 // eslint-disable-next-line react/prop-types
 const MainHeader = ({ barState, setBarState }) => {
@@ -14,12 +14,10 @@ const MainHeader = ({ barState, setBarState }) => {
         <Link href="/">Jakub Gajewski</Link>
       </H3>
 
-      <StyledHamburger>
-        <Hamburger onClick={Toogle}>
-          <TopBar topChanged={barState} />
-          <BottomBar bottomChanged={barState} />
-        </Hamburger>
-      </StyledHamburger>
+      <Hamburger onClick={Toogle}>
+        <TopBar topChanged={barState} />
+        <BottomBar bottomChanged={barState} />
+      </Hamburger>
     </Header>
   );
 };

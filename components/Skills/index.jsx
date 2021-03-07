@@ -8,7 +8,7 @@ const SkillsPage = () => {
       <RightItem>
         <StyledHeader>
           <H5>skills</H5>
-          <H1>??</H1>
+          <H1>Tech stack</H1>
         </StyledHeader>
         <StyledBody>
           <Body>
@@ -22,7 +22,7 @@ const SkillsPage = () => {
               <li>Next.js</li>
             </ul>
             Other skills include: HTML5 &amp; CSS3, Jest Testing, Styled-Components, Responsive Web
-            Design, Building UI Components, GraphQL schemas, Storybook, Sketch, Docker, Google
+            Design, Building UI Components, GraphQL schemas, Storybook, Sketch/Figma, Docker, Google
             Analytics, GSAP, Accessibility standards and tools.
           </Body>
         </StyledBody>

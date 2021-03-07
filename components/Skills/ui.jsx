@@ -89,7 +89,7 @@ export const StyledBody = styled.div`
   }
 `;
 
-export const Body = styled.p`
+export const Body = styled.div`
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 0.02em;

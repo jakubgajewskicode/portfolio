@@ -37,7 +37,7 @@ const MainBody = () => {
         </StyledHeader>
         <StyledBody>
           <Body>
-            I’m a passionate, self-taught front-end developer, currently working full time for&nbsp;
+            I’m a passionate, self-taught front-end developer currently working full time for&nbsp;
             <Link passHref href="https://www.rapha.cc/">
               <StyledAnchor>Rapha Racing</StyledAnchor>
             </Link>

@@ -30,15 +30,15 @@ export const H3 = styled.h3`
 export const Hamburger = styled.div`
   width: 25px;
   height: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
   cursor: pointer;
-
   z-index: 10;
 `;
 
 export const TopBar = styled.span`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 1px;
   z-index: 10;
@@ -47,10 +47,13 @@ export const TopBar = styled.span`
     background-color 1.1s cubic-bezier(0.8, 0, 0.55, 0.94);
   transform-origin: 100% 0;
   transform: ${({ topChanged }) =>
-    topChanged === true ? `translate3d(-5px, 3px, 0) rotate(-45deg)` : `translate3d(0, 10px, 0)`};
+    topChanged === true ? `translate3d(-5px, 3px, 0) rotate(-45deg)` : `translate3d(0, 9px, 0)`};
 `;
 
 export const BottomBar = styled.span`
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 1px;
   z-index: 10;
@@ -60,8 +63,4 @@ export const BottomBar = styled.span`
   transform-origin: 100% 100%;
   transform: ${({ bottomChanged }) =>
     bottomChanged === true ? `translate3d(-5px, -3px, 0) rotate(45deg)` : `translate3d(0, 0px, 0)`};
-`;
-
-export const StyledHamburger = styled.div`
-  z-index: 2;
 `;
