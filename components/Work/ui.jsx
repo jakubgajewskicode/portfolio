@@ -299,11 +299,25 @@ export const CarouselWrapper = styled.section`
   @media ${device.tablet} {
     .react-multiple-carousel__arrow--left {
       left: calc(1% + 1px);
-      bottom: unset;
+      top: unset;
     }
     .react-multiple-carousel__arrow--right {
       right: calc(1% + 1px);
-      bottom: unset;
+      top: unset;
+    }
+    .react-multi-carousel-dot-list {
+      position: absolute;
+      top: unset;
+      bottom: 50px;
+      display: flex;
+      left: 0;
+      right: 0px;
+      justify-content: center;
+      margin: auto;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
     }
   }
 `;

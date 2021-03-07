@@ -24,9 +24,9 @@ export default css`
     border-radius: 35px;
     z-index: 1;
     border: none;
-    background: rgba(0, 0, 0, 0.5);
-    min-width: 43px;
-    min-height: 43px;
+    background: rgba(0, 0, 0, 0.3);
+    min-width: 35px;
+    min-height: 35px;
     opacity: 1;
     cursor: pointer;
   }
@@ -45,14 +45,14 @@ export default css`
 
   .react-multiple-carousel__arrow--left {
     left: calc(1% + 1px);
-    bottom: 20px;
+    top: 23%;
   }
   .react-multiple-carousel__arrow--left::before {
     content: '<';
   }
   .react-multiple-carousel__arrow--right {
     right: calc(1% + 1px);
-    bottom: 20px;
+    top: 23%;
   }
   .react-multiple-carousel__arrow--right::before {
     content: '>';
@@ -60,10 +60,10 @@ export default css`
 
   .react-multi-carousel-dot-list {
     position: absolute;
-    bottom: 0;
+    top: 7px;
     display: flex;
     left: 0;
-    right: 0;
+    right: -163px;
     justify-content: center;
     margin: auto;
     padding: 0;
