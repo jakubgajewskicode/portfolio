@@ -17,6 +17,8 @@ import {
   StyledBody,
   CarouselWrapper,
   BulbWrap,
+  StyledAnchor2,
+  StyledTitle,
   StyledAnchor
 } from './ui';
 
@@ -72,36 +74,39 @@ const WorkPage = ({ barState }) => {
               <RightItem>
                 <StyledHeader>
                   <H5>new e-commerce</H5>
-
-                  <H1>Rapha Racing</H1>
+                  <H1>
+                    <Link passHref href="https://www.rapha.cc/">
+                      <StyledAnchor2>Rapha Racing</StyledAnchor2>
+                    </Link>
+                  </H1>
                 </StyledHeader>
                 <StyledBody>
-                  <Body>
-                    Rapha&apos;s mission is to make cycling the most popular sport in the world.
-                    It’s E-Commerce platform with the world’s finest cycling clothing I ever
-                    experienced.
+                  <StyledTitle>
+                    <br /> Rapha is a e-commerce platform with the world’s finest cycling clothing I
+                    ever experienced. Our mission is to make cycling the most popular sport in the
+                    world.
                     <br />
-                  </Body>
+                  </StyledTitle>
                   <Body>
-                    Goal: Our aim as a tech team is to create new e-commerce platform based on
-                    modern serverless approach.
+                    Current goal as a tech team is to create new e-commerce platform based on modern
+                    serverless approach.
                   </Body>
                   <Body>
                     As a front end developer I am responsible for:
                     <ul>
                       <li>
                         Working closely with designer and other talented developers on building up
-                        from scratch new UI.
+                        from scratch new UI
                       </li>
                       <Link passHref href="https://www.npmjs.com/package/@rapharacing/rapha-ui">
                         <StyledAnchor>npm rapha-ui</StyledAnchor>
                       </Link>
                       <li>
                         Creating GraphQL schemas and integrating our CMS Contentful data with our
-                        Components via Apollo.
+                        Components via Apollo
                       </li>
                       <li>Testing components with Jest</li>
-                      <li>Accessibility Audits.</li>
+                      <li>Accessibility Audits</li>
                       <li>
                         Beside main project I have been working with third party GTM agency to
                         implement updates to our current data tracing layer
@@ -109,7 +114,7 @@ const WorkPage = ({ barState }) => {
                     </ul>
                   </Body>
                   <Body>
-                    Tech stack in which I am hugly involved in:
+                    Tech stack in which highly involved in:
                     <ul>
                       <li>React</li>
                       <li>Next.js</li>
@@ -139,6 +144,8 @@ const WorkPage = ({ barState }) => {
                     <ul>
                       <li>React on Next.js. Server-side rendered</li>
                       <li>Design by Myself</li>
+                      <li>Font - Lato</li>
+                      <li>CSS - Styled Components</li>
                       <li>
                         Ilustrations by&nbsp;
                         <Link passHref href="https://absurd.design/">
@@ -148,7 +155,9 @@ const WorkPage = ({ barState }) => {
                     </ul>
                   </Body>
                   <Body>
-                    Newsletter Blog
+                    <Link passHref href="https://jakub-playground.vercel.app/">
+                      <StyledAnchor>Newsletter Blog</StyledAnchor>
+                    </Link>
                     <ul>
                       <li>Contentful CMS with Gatsby build</li>
                     </ul>

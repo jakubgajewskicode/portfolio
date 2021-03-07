@@ -317,3 +317,30 @@ export const StyledAnchor = styled.a`
     text-decoration: underline;
   }
 `;
+
+export const StyledTitle = styled.h5`
+  letter-spacing: 0.02em;
+  /* color: rgba(0, 0, 0, 0.7); */
+  line-height: 2em;
+  margin: 50px auto;
+  font-weight: 600;
+
+  @media ${device.tablet} {
+    font-size: 14px;
+    margin: 25px 20px 20px 80px;
+  }
+
+  @media ${device.laptop} {
+    margin: 25px 20px 20px 80px;
+  }
+`;
+
+export const StyledAnchor2 = styled.a`
+  color: black;
+  text-decoration: none;
+
+  :hover {
+    opacity: 0.5;
+    text-decoration: none;
+  }
+`;

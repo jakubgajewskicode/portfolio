@@ -1,4 +1,16 @@
-import { Main, LeftItem, RightItem, StyledHeader, H5, H1, Body, StyledBody } from './ui';
+import Link from 'next/link';
+
+import {
+  Main,
+  LeftItem,
+  RightItem,
+  StyledHeader,
+  H5,
+  H1,
+  Body,
+  StyledBody,
+  StyledAnchor
+} from './ui';
 
 import About from '../../public/Svgs/About.svg';
 
@@ -18,13 +30,17 @@ const LabsPage = () => {
             </ul>
           </Body>
           <Body>
-            Static website
+            <Link passHref href="https://jakubgajewskicode.github.io/cra-rr/">
+              <StyledAnchor>Static website with nav</StyledAnchor>
+            </Link>
             <ul>
               <li>Based on React Router</li>
             </ul>
           </Body>
           <Body>
-            Game - One Handed Bandit
+            <Link passHref href="https://jakubgajewskicode.github.io/oop-js-game/">
+              <StyledAnchor>Game - One Handed Bandit</StyledAnchor>
+            </Link>
             <ul>
               <li>Used extensively JavaScript / CSS</li>
             </ul>
