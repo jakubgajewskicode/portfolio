@@ -33,7 +33,7 @@ export const Main = styled.section`
     margin-top: 100px;
   }
   @media ${device.laptop} {
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   @media ${device.laptopL} {
