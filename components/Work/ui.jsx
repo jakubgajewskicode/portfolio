@@ -318,12 +318,13 @@ export const StyledAnchor = styled.a`
   }
 `;
 
-export const StyledTitle = styled.h5`
+export const StyledTitle = styled(Body)`
+  font-size: 16px;
+  font-weight: 500;
   letter-spacing: 0.02em;
-  /* color: rgba(0, 0, 0, 0.7); */
+  color: rgba(0, 0, 0, 0.9);
   line-height: 2em;
   margin: 50px auto;
-  font-weight: 600;
 
   @media ${device.tablet} {
     font-size: 14px;
@@ -341,6 +342,5 @@ export const StyledAnchor2 = styled.a`
 
   :hover {
     opacity: 0.5;
-    text-decoration: none;
   }
 `;
