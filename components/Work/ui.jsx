@@ -170,7 +170,7 @@ export const LeftItem = styled.aside`
 `;
 
 export const BulbWrap = styled.aside`
-  margin: 0;
+  margin: auto 0;
   opacity: 0;
 
   svg {
