@@ -82,7 +82,7 @@ const WorkPage = ({ barState }) => {
                 </StyledHeader>
                 <StyledBody>
                   <StyledTitle>
-                    Rapha is a e-commerce platform with the world’s finest cycling clothing I ever
+                    Rapha is e-commerce platform with the world’s finest cycling clothing I ever
                     experienced. Our mission is to make cycling the most popular sport in the world.
                   </StyledTitle>
                   <Body>
