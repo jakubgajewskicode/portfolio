@@ -26,6 +26,7 @@ const ImageIn = keyframes`
 
 export const Main = styled.section`
   display: flex;
+  overflow-y: hidden;
 
   @media ${device.tablet} {
     display: grid;
