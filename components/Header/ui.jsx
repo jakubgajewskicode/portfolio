@@ -10,6 +10,7 @@ export const Header = styled.header`
 `;
 
 export const H3 = styled.h3`
+  font-size: 19px;
   font-weight: 200;
   z-index: 2;
   margin: 0;

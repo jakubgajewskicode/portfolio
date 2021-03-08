@@ -31,6 +31,7 @@ export const DetailList = styled.ul`
   padding-left: 0;
   position: relative;
   padding-top: 65px;
+  list-style: none;
 `;
 
 export const GeneralWrap = styled.div`
