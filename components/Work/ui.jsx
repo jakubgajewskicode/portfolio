@@ -300,11 +300,9 @@ export const CarouselWrapper = styled.section`
 
   @media ${device.tablet} {
     .react-multiple-carousel__arrow--left {
-      left: calc(1% + 1px);
       top: unset;
     }
     .react-multiple-carousel__arrow--right {
-      right: calc(1% + 1px);
       top: unset;
     }
     .react-multi-carousel-dot-list {

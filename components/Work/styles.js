@@ -44,15 +44,15 @@ export default css`
   }
 
   .react-multiple-carousel__arrow--left {
-    left: calc(1% + 1px);
-    top: 23%;
+    left: 0px;
+    top: 24%;
   }
   .react-multiple-carousel__arrow--left::before {
     content: '<';
   }
   .react-multiple-carousel__arrow--right {
-    right: calc(1% + 1px);
-    top: 23%;
+    right: 0;
+    top: 24%;
   }
   .react-multiple-carousel__arrow--right::before {
     content: '>';
