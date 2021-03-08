@@ -80,15 +80,7 @@ export const H5 = styled.h5`
   opacity: 0.3;
 `;
 
-export const StyledBody = styled.div`
-  opacity: 0;
-  margin-top: 30px;
 
-  @media ${device.mobileS} {
-    animation: 1.7s ${fadeIn} cubic-bezier(0.8, 0, 0.55, 0.94);
-    opacity: 1;
-  }
-`;
 
 export const Body = styled.div`
   font-size: 16px;
@@ -105,6 +97,16 @@ export const Body = styled.div`
 
   @media ${device.laptop} {
     margin: 25px 20px 20px 80px;
+  }
+`;
+
+export const StyledBody = styled(Body)`
+  opacity: 0;
+  margin-top: 30px;
+
+  @media ${device.mobileS} {
+    animation: 1.7s ${fadeIn} cubic-bezier(0.8, 0, 0.55, 0.94);
+    opacity: 1;
   }
 `;
 
@@ -342,11 +344,7 @@ export const StyledTitle = styled(Body)`
 
   @media ${device.tablet} {
     font-size: 14px;
-    margin: 25px 20px 20px 80px;
-  }
 
-  @media ${device.laptop} {
-    margin: 25px 20px 20px 80px;
   }
 `;
 
@@ -355,6 +353,28 @@ export const StyledAnchor2 = styled.a`
   text-decoration: none;
 
   :hover {
+    opacity: 0.5;
+  }
+`;
+
+export const UL = styled.ul`
+  list-style: disc;
+
+   * p {
+    margin: 3px;
+  }
+`;
+
+export const StyledAnchor3 = styled.a`
+  color: black;
+  text-decoration: underline;
+  
+
+  :hover {
+    opacity: 0.5;
+  }
+
+  p:hover {
     opacity: 0.5;
   }
 `;

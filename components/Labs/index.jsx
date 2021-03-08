@@ -24,9 +24,12 @@ const LabsPage = () => {
         </StyledHeader>
         <StyledBody>
           <Body>
-            Weather App
+            <p>Weather App</p>
             <ul>
-              <li>Sending requests to openweathermap API to process weather parameters</li>
+              <li>
+                Sending requests to openweathermap API to process weather
+                parameters
+              </li>
             </ul>
           </Body>
           <Body>
@@ -34,11 +37,16 @@ const LabsPage = () => {
               <StyledAnchor>Static website with nav</StyledAnchor>
             </Link>
             <ul>
-              <li>Based on React Router</li>
+              <li>
+                <p>Based on React Router</p>
+              </li>
             </ul>
           </Body>
           <Body>
-            <Link passHref href="https://jakubgajewskicode.github.io/oop-js-game/">
+            <Link
+              passHref
+              href="https://jakubgajewskicode.github.io/oop-js-game/"
+            >
               <StyledAnchor>Game - One Handed Bandit</StyledAnchor>
             </Link>
             <ul>

@@ -189,10 +189,9 @@ export const LI = styled.li`
 
 export const StyledAnchor = styled.a`
   color: black;
-  text-decoration: none;
+
 
   :hover {
     opacity: 0.5;
-    text-decoration: underline;
   }
 `;

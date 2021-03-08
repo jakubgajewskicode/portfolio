@@ -13,13 +13,13 @@ import {
   StyledHeader,
   H5,
   H1,
-  Body,
   StyledBody,
   CarouselWrapper,
   BulbWrap,
   StyledAnchor2,
   StyledTitle,
-  StyledAnchor
+  UL,
+  StyledAnchor3,
 } from './ui';
 
 const WorkPage = ({ barState }) => {
@@ -82,46 +82,51 @@ const WorkPage = ({ barState }) => {
                 </StyledHeader>
                 <StyledBody>
                   <StyledTitle>
-                    Rapha is e-commerce platform with the world’s finest cycling clothing I ever
-                    experienced. Our mission is to make cycling the most popular sport in the world.
+                    <p>
+                    <Link passHref href="https://www.rapha.cc/">
+                      <StyledAnchor3>Rapha</StyledAnchor3>
+                    </Link> is e-commerce platform with the world’s finest cycling clothing I ever
+                      experienced. Our mission is to make cycling the most popular sport in the
+                      world.
+                    </p>
                   </StyledTitle>
-                  <Body>
+                  <p>
                     Current goal as a tech team is to create new e-commerce platform based on modern
-                    serverless approach.
-                  </Body>
-                  <Body>
-                    As a front end developer I am responsible for:
-                    <ul>
-                      <li>
+                    serverless approach. As a front end developer I am responsible for:
+                  </p>
+                  <UL>
+                    <li>
+                      <p>
                         Working closely with designer and other talented developers on building up
                         from scratch new UI
-                      </li>
-                      <Link passHref href="https://www.npmjs.com/package/@rapharacing/rapha-ui">
-                        <StyledAnchor>npm rapha-ui</StyledAnchor>
-                      </Link>
-                      <li>
+                      </p>
+                    </li>
+                    <Link passHref href="https://www.npmjs.com/package/@rapharacing/rapha-ui">
+                      <StyledAnchor3>npm rapha-ui</StyledAnchor3>
+                    </Link>
+                    <li>
+                      <p>
                         Creating GraphQL schemas and integrating our CMS Contentful data with our
                         Components via Apollo
-                      </li>
-                      <li>Testing components with Jest</li>
-                      <li>Accessibility Audits</li>
-                      <li>
-                        Beside main project I have been working with third party GTM agency to
-                        implement updates to our current data tracing layer
-                      </li>
-                    </ul>
-                  </Body>
-                  <Body>
-                    Tech stack in which highly involved in:
-                    <ul>
-                      <li>React</li>
-                      <li>Next.js</li>
-                      <li>Typescript</li>
-                      <li>GraphQL</li>
-                      <li>Contentful</li>
-                      <li>Storybook</li>
-                    </ul>
-                  </Body>
+                      </p>
+                    </li>
+                    <li>
+                      <p>Testing components with Jest</p>
+                    </li>
+                    <li><p>Accessibility Audits</p></li>
+                    <li>
+                     <p>Beside main project I have been working with third party GTM agency to implement updates to our current data tracing layer</p>
+                    </li>
+                  </UL>
+                  <p>Tech stack in which highly involved in:</p>
+                  <UL>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Typescript</li>
+                    <li>GraphQL</li>
+                    <li>Contentful</li>
+                    <li>Storybook</li>
+                  </UL>
                 </StyledBody>
               </RightItem>
               <LeftItem>
@@ -137,35 +142,29 @@ const WorkPage = ({ barState }) => {
                   <H1>Apps</H1>
                 </StyledHeader>
                 <StyledBody>
-                  <Body>
-                    Current portofolio website
-                    <ul>
-                      <li>React on Next.js. Server-side rendered</li>
-                      <li>Design by Myself</li>
-                      <li>Font - Lato</li>
-                      <li>CSS - Styled Components</li>
-                      <li>
-                        Ilustrations by&nbsp;
-                        <Link passHref href="https://absurd.design/">
-                          <StyledAnchor>Absurd Design</StyledAnchor>
-                        </Link>
-                      </li>
-                    </ul>
-                  </Body>
-                  <Body>
-                    <Link passHref href="https://jakub-playground.vercel.app/">
-                      <StyledAnchor>Newsletter Blog</StyledAnchor>
-                    </Link>
-                    <ul>
-                      <li>Contentful CMS with Gatsby build</li>
-                    </ul>
-                  </Body>
-                  <Body>
-                    Messenger App
-                    <ul>
-                      <li>React / Firebase</li>
-                    </ul>
-                  </Body>
+                  <p>Current portofolio website</p>
+                  <UL>
+                    <li>React on Next.js. Server-side rendered</li>
+                    <li>Design by Myself</li>
+                    <li>Font - Lato</li>
+                    <li>CSS - Styled Components</li>
+                    <li>
+                      Ilustrations by&nbsp;
+                      <Link passHref href="https://absurd.design/">
+                        <StyledAnchor3>Absurd Design</StyledAnchor3>
+                      </Link>
+                    </li>
+                  </UL>
+                  <Link passHref href="https://jakub-playground.vercel.app/">
+                    <StyledAnchor3><p>Newsletter Blog</p></StyledAnchor3>
+                  </Link>
+                  <UL>
+                    <li>Contentful CMS with Gatsby build</li>
+                  </UL>
+                  <p>Messenger App</p>
+                  <UL>
+                    <li>React / Firebase</li>
+                  </UL>
                 </StyledBody>
               </RightItem>
               <BulbWrap>
