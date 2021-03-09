@@ -30,7 +30,7 @@ export const DetailList = styled.ul`
   height: 100%;
   padding-left: 0;
   position: relative;
-  padding-top: 65px;
+  padding-top: 85px;
   list-style: none;
 `;
 
@@ -85,14 +85,14 @@ export const StyledDetailLink = styled.li`
       letter-spacing: 1px;
       line-height: 1.05em;
       color: #ffffff;
-      font-size: 18vmin;
+      font-size: 22vmin;
       text-decoration: none;
     }
   }
 
   @media ${device.tablet} {
     a {
-      font-size: 14vmin;
+      font-size: 15vmin;
     }
   }
 `;
