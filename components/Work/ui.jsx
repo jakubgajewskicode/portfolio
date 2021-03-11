@@ -376,5 +376,5 @@ export const StyledAnchor3 = styled.a`
 `;
 
 export const StyledP = styled.p`
-  margin: 14px;
+  margin: 14px 0;
 `;
