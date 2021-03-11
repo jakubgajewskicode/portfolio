@@ -80,8 +80,6 @@ export const H5 = styled.h5`
   opacity: 0.3;
 `;
 
-
-
 export const Body = styled.div`
   font-size: 16px;
   font-weight: 200;
@@ -325,6 +323,7 @@ export const CarouselWrapper = styled.section`
 export const StyledAnchor = styled.a`
   color: black;
   text-decoration: none;
+  border-bottom: 1px solid black;
 
   :hover {
     opacity: 0.5;
@@ -342,7 +341,6 @@ export const StyledTitle = styled(Body)`
 
   @media ${device.tablet} {
     font-size: 14px;
-
   }
 `;
 
@@ -358,15 +356,16 @@ export const StyledAnchor2 = styled.a`
 export const UL = styled.ul`
   list-style: disc;
 
-   * p {
+  * p {
     margin: 3px;
   }
 `;
 
 export const StyledAnchor3 = styled.a`
   color: black;
-  text-decoration: underline;
-  
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  margin-top: 50px;
 
   :hover {
     opacity: 0.5;

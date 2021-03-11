@@ -17,10 +17,10 @@ import {
 const StyledAnchor = styled.a`
   color: black;
   text-decoration: none;
+  border-bottom: 1px solid black;
 
   :hover {
     opacity: 0.5;
-    text-decoration: underline;
   }
 `;
 
@@ -45,7 +45,9 @@ const MainBody = () => {
             environments.
           </Body>
           <Link href="/projects" passHref>
-            <StyledLink>Learn more</StyledLink>
+            <StyledLink>
+              <a>To my projects</a>
+            </StyledLink>
           </Link>
         </StyledBody>
       </RightItem>

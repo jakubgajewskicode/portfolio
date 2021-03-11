@@ -17,15 +17,15 @@ export const Overlay = styled.div`
     state === true ? `translate3d(0, 0, 0)` : `translate3d(0, -100%, 0)`};
   transition: ${({ state }) =>
     state === true
-      ? `opacity 700ms step-start, transform 700ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 700ms step-start, background-color 700ms cubic-bezier(0.8, 0, 0.55, 0.94);`
-      : `opacity 700ms step-end, transform 700ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 700ms step-end, background-color 700ms cubic-bezier(0.8, 0, 0.55, 0.94);`};
+      ? `opacity 500ms step-start, transform 500ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 500ms step-start, background-color 500ms cubic-bezier(0.8, 0, 0.55, 0.94);`
+      : `opacity 500ms step-end, transform 500ms cubic-bezier(0.8, 0, 0.55, 0.94), visibility 500ms step-end, background-color 500ms cubic-bezier(0.8, 0, 0.55, 0.94);`};
 `;
 
 export const DetailList = styled.ul`
   width: 90%;
   margin-top: 11vmin;
   margin: 17vmin auto;
-  transition: opacity 700ms cubic-bezier(0.8, 0, 0.55, 0.94) 700ms;
+  transition: opacity 500ms cubic-bezier(0.8, 0, 0.55, 0.94) 500ms;
   opacity: ${({ state }) => (state === true ? `1` : `0`)};
   height: 100%;
   padding-left: 0;

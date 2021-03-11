@@ -19,7 +19,7 @@ import {
   StyledAnchor2,
   StyledTitle,
   UL,
-  StyledAnchor3,
+  StyledAnchor3
 } from './ui';
 
 const WorkPage = ({ barState }) => {
@@ -83,9 +83,10 @@ const WorkPage = ({ barState }) => {
                 <StyledBody>
                   <StyledTitle>
                     <p>
-                    <Link passHref href="https://www.rapha.cc/">
-                      <StyledAnchor3>Rapha</StyledAnchor3>
-                    </Link> is e-commerce platform with the world’s finest cycling clothing I ever
+                      <Link passHref href="https://www.rapha.cc/">
+                        <StyledAnchor3>Rapha</StyledAnchor3>
+                      </Link>
+                      &nbsp;is e-commerce platform with the world’s finest cycling clothing I ever
                       experienced. Our mission is to make cycling the most popular sport in the
                       world.
                     </p>
@@ -98,7 +99,7 @@ const WorkPage = ({ barState }) => {
                     <li>
                       <p>
                         Working closely with designer and other talented developers on building up
-                        from scratch new UI
+                        new UI from scratch.
                       </p>
                     </li>
                     <Link passHref href="https://www.npmjs.com/package/@rapharacing/rapha-ui">
@@ -113,9 +114,14 @@ const WorkPage = ({ barState }) => {
                     <li>
                       <p>Testing components with Jest</p>
                     </li>
-                    <li><p>Accessibility Audits</p></li>
                     <li>
-                     <p>Beside main project I have been working with third party GTM agency to implement updates to our current data tracing layer</p>
+                      <p>Accessibility Audits</p>
+                    </li>
+                    <li>
+                      <p>
+                        Beside main project I have been working with third party GTM agency to
+                        implement updates to our current data tracing layer
+                      </p>
                     </li>
                   </UL>
                   <p>Tech stack in which highly involved in:</p>
@@ -156,7 +162,11 @@ const WorkPage = ({ barState }) => {
                     </li>
                   </UL>
                   <Link passHref href="https://jakub-playground.vercel.app/">
-                    <StyledAnchor3><p>Newsletter Blog</p></StyledAnchor3>
+                    <div>
+                      <StyledAnchor3>
+                        <a> Newsletter Blog</a>
+                      </StyledAnchor3>
+                    </div>
                   </Link>
                   <UL>
                     <li>Contentful CMS with Gatsby build</li>

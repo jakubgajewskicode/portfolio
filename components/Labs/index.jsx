@@ -26,10 +26,7 @@ const LabsPage = () => {
           <Body>
             <p>Weather App</p>
             <ul>
-              <li>
-                Sending requests to openweathermap API to process weather
-                parameters
-              </li>
+              <li>Sending requests to openweathermap API to process weather parameters</li>
             </ul>
           </Body>
           <Body>
@@ -43,10 +40,7 @@ const LabsPage = () => {
             </ul>
           </Body>
           <Body>
-            <Link
-              passHref
-              href="https://jakubgajewskicode.github.io/oop-js-game/"
-            >
+            <Link passHref href="https://jakubgajewskicode.github.io/oop-js-game/">
               <StyledAnchor>Game - One Handed Bandit</StyledAnchor>
             </Link>
             <ul>

@@ -141,7 +141,7 @@ export const StyledLink = styled.div`
   @media ${device.tablet} {
     padding-left: 100px;
     ::after {
-      left: 207px;
+      left: 225px;
     }
   }
 `;

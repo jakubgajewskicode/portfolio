@@ -21,10 +21,11 @@ const SkillsPage = () => {
               <li> Contentful</li>
               <li>Next.js</li>
             </ul>
-           <p> Other skills include: HTML5 &amp; CSS3, Jest Testing,
-            Styled-Components, Responsive Web Design, Building UI Components,
-            GraphQL schemas, Storybook, Sketch/Figma, Docker, Google Analytics,
-            GSAP, Accessibility standards and tools.</p>
+            <p>
+              Other skills include: HTML5 &amp; CSS3, Jest Testing, Styled-Components, Responsive
+              Web Design, Building UI Components, GraphQL schemas, Storybook, Sketch/Figma, Docker,
+              Google Analytics, GSAP, Accessibility standards and tools.
+            </p>
           </Body>
         </StyledBody>
       </RightItem>

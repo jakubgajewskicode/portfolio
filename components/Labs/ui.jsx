@@ -189,7 +189,8 @@ export const LI = styled.li`
 
 export const StyledAnchor = styled.a`
   color: black;
-
+  text-decoration: none;
+  border-bottom: 1px solid black;
 
   :hover {
     opacity: 0.5;
