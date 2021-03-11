@@ -122,7 +122,7 @@ const WorkPage = ({ barState }) => {
                     <li>
                       <p>
                         Beside main project I have been working with third party GTM agency to
-                        implement updates to our current data tracing layer
+                        implement updates to our current data tracking layer
                       </p>
                     </li>
                   </UL>
