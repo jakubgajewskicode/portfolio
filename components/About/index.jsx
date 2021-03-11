@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import About from '../../public/Svgs/About.svg';
+import Face from '../../public/Pngs/Face.png';
 import Gitlab from '../../public/Svgs/GitLab.svg';
 import Github from '../../public/Svgs/Github.svg';
 import LargeMail from '../../public/Svgs/LargeMail.svg';
@@ -90,7 +90,7 @@ const AboutPage = () => {
         </StyledBody>
       </RightItem>
       <LeftItem>
-        <About />
+        <img src={Face} alt="about face" />
       </LeftItem>
     </Main>
   );

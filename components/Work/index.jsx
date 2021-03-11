@@ -4,7 +4,8 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 import Bike from '../../public/Svgs/Bike-SVG.svg';
-import Bulb from '../../public/Svgs/AboutBulb2.svg';
+
+import Zarowka from '../../public/Pngs/Zarowka.png';
 
 import {
   Main,
@@ -179,7 +180,7 @@ const WorkPage = ({ barState }) => {
                 </StyledBody>
               </RightItem>
               <BulbWrap>
-                <Bulb />
+                <img src={Zarowka} alt="bulbimage" />
               </BulbWrap>
             </>
           </Main>

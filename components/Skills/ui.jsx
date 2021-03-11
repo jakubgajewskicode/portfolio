@@ -149,11 +149,10 @@ export const StyledLink = styled.div`
 `;
 
 export const LeftItem = styled.aside`
-  margin: 0;
+  margin: auto 0;
   opacity: 0;
 
   img {
-    height: 100%;
     width: 100%;
   }
 
