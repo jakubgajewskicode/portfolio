@@ -363,9 +363,10 @@ export const UL = styled.ul`
 
 export const StyledAnchor3 = styled.a`
   color: black;
-  text-decoration: none;
   border-bottom: 1px solid black;
   margin-top: 50px;
+  cursor: pointer;
+  text-decoration: none;
 
   :hover {
     opacity: 0.5;
@@ -374,4 +375,8 @@ export const StyledAnchor3 = styled.a`
   p:hover {
     opacity: 0.5;
   }
+`;
+
+export const StyledP = styled.p`
+  margin: 14px;
 `;

@@ -19,7 +19,8 @@ import {
   StyledAnchor2,
   StyledTitle,
   UL,
-  StyledAnchor3
+  StyledAnchor3,
+  StyledP
 } from './ui';
 
 const WorkPage = ({ barState }) => {
@@ -163,9 +164,9 @@ const WorkPage = ({ barState }) => {
                   </UL>
                   <Link passHref href="https://jakub-playground.vercel.app/">
                     <div>
-                      <StyledAnchor3>
-                        <p> Newsletter Blog</p>
-                      </StyledAnchor3>
+                      <StyledP>
+                        <StyledAnchor3>Newsletter Blog</StyledAnchor3>
+                      </StyledP>
                     </div>
                   </Link>
                   <UL>
