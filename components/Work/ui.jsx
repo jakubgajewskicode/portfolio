@@ -100,7 +100,7 @@ export const Body = styled.div`
 
 export const StyledBody = styled(Body)`
   opacity: 0;
-  margin-top: 30px;
+  margin-top: 25px;
 
   @media ${device.mobileS} {
     animation: 1.7s ${fadeIn} cubic-bezier(0.8, 0, 0.55, 0.94);
@@ -190,7 +190,6 @@ export const BulbWrap = styled.aside`
 export const RightItem = styled.aside`
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
 `;
 
 export const SideNav = styled.ul`
@@ -336,7 +335,7 @@ export const StyledTitle = styled(Body)`
   letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.9);
   line-height: 2em;
-  margin: 50px auto;
+  margin: 15px auto;
 
   @media ${device.tablet} {
     font-size: 14px;
