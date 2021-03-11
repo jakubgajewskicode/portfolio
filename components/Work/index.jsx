@@ -164,7 +164,7 @@ const WorkPage = ({ barState }) => {
                   <Link passHref href="https://jakub-playground.vercel.app/">
                     <div>
                       <StyledAnchor3>
-                        <a> Newsletter Blog</a>
+                        <p> Newsletter Blog</p>
                       </StyledAnchor3>
                     </div>
                   </Link>
