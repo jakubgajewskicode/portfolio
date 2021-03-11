@@ -126,7 +126,7 @@ const WorkPage = ({ barState }) => {
                       </p>
                     </li>
                   </UL>
-                  <p>Tech stack in which highly involved in:</p>
+                  <p>Tech stack in which I am involved in:</p>
                   <UL>
                     <li>React</li>
                     <li>Next.js</li>
