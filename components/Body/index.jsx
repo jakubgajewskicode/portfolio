@@ -45,9 +45,7 @@ const MainBody = () => {
             environments.
           </Body>
           <Link href="/projects" passHref>
-            <StyledLink>
-              <a>To my projects</a>
-            </StyledLink>
+            <StyledLink>To my projects</StyledLink>
           </Link>
         </StyledBody>
       </RightItem>
