@@ -105,11 +105,12 @@ export const Body = styled.p`
   }
 `;
 
-export const StyledLink = styled.div`
+export const StyledLink = styled.span`
   display: inline;
   position: relative;
   cursor: pointer;
   transition: margin-left 0.7s ease;
+  font-weight: bold;
 
   ::after {
     content: '';
