@@ -116,7 +116,7 @@ export const StyledLink = styled.span`
     content: '';
     position: absolute;
     width: 55%;
-    left: 110px;
+    left: 125px;
     top: 60%;
     background-color: #000;
     opacity: 0.1;
