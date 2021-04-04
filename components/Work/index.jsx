@@ -21,7 +21,9 @@ import {
   StyledTitle,
   UL,
   StyledAnchor3,
-  StyledP
+  StyledP,
+  Button,
+  ButtonsWrap
 } from './ui';
 
 const WorkPage = ({ barState }) => {
@@ -150,7 +152,7 @@ const WorkPage = ({ barState }) => {
                   <H1>Apps</H1>
                 </StyledHeader>
                 <StyledBody>
-                  <p>Current portofolio website</p>
+                  <H5>Current portofolio</H5>
                   <UL>
                     <li>React on Next.js. Server-side rendered</li>
                     <li>Design by Myself</li>
@@ -163,20 +165,54 @@ const WorkPage = ({ barState }) => {
                       </Link>
                     </li>
                   </UL>
-                  <Link passHref href="https://jakub-playground.vercel.app/">
-                    <div>
-                      <StyledP>
-                        <StyledAnchor3>Newsletter Blog</StyledAnchor3>
-                      </StyledP>
-                    </div>
-                  </Link>
+                  <H5>Precise Weather App</H5>
+                  <p> Current and hours forecast for next 3 days</p>
                   <UL>
-                    <li>Contentful CMS with Gatsby build</li>
+                    <li>
+                      Drag the map or choose city to get live weather update for current location
+                    </li>
+                    <li>Integrating two APIs together: Mapbox and Openweathermap</li>
+                    <li>Using react-map-gl wrapper for Mapbox</li>
+                    <li>Geocoder to process city locations</li>
+                    <li>GeolocateControl to process client location</li>
                   </UL>
-                  <p>Messenger App</p>
+                  <ButtonsWrap>
+                    <Button>
+                      <a href="/weather">View Demo</a>
+                    </Button>
+                    <Button>
+                      <a href="https://github.com/jakubgajewskicode/portfolio/blob/main/pages/weather/index.jsx">
+                        View GitHub
+                      </a>
+                    </Button>
+                  </ButtonsWrap>
+
+                  <div>
+                    <H5>Newsletter Blog</H5>
+                    <UL>
+                      <li>Contentful Headless CMS integreted with Gatsby build</li>
+                    </UL>
+                    <ButtonsWrap>
+                      <Button>
+                        <a href="https://jakub-playground.vercel.app/">View Demo</a>
+                      </Button>
+                      <Button>
+                        <a href="https://github.com/jakubgajewskicode/blog">View GitHub</a>
+                      </Button>
+                    </ButtonsWrap>
+                  </div>
+                  <H5>Messenger App</H5>
                   <UL>
                     <li>React / Firebase</li>
                   </UL>
+                  <ButtonsWrap>
+                    <Button>
+                      <a href="https://jakub-playground.vercel.app/">View Demo</a>
+                    </Button>
+                    <Button>
+                      <a href="https://github.com/jakubgajewskicode/blog">View GitHub</a>
+                    </Button>
+                  </ButtonsWrap>
                 </StyledBody>
               </RightItem>
               <BulbWrap>
