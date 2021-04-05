@@ -1,8 +1,6 @@
 import Carousel from 'react-multi-carousel';
 import Link from 'next/link';
 
-import PropTypes from 'prop-types';
-
 import Bike from '../../public/Svgs/Bike-SVG.svg';
 
 import Zarowka from '../../public/Pngs/Zarowka.png';
@@ -22,16 +20,17 @@ import {
   UL,
   StyledAnchor3,
   Button,
-  ButtonsWrap
+  ButtonsWrap,
+  RightArrow,
+  LeftArrow
 } from './ui';
 
-const WorkPage = ({ barState }) => {
+const WorkPage = () => {
   return (
     <>
       <CarouselWrapper>
         <Carousel
           additionalTransfrom={0}
-          arrows={!barState}
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
@@ -39,12 +38,13 @@ const WorkPage = ({ barState }) => {
           dotListClass=""
           draggable
           focusOnSelect={false}
-          infinite
           itemClass=""
           keyBoardControl
           minimumTouchDrag={80}
           renderButtonGroupOutside={false}
           renderDotsOutside={false}
+          customRightArrow={<RightArrow />}
+          customLeftArrow={<LeftArrow />}
           responsive={{
             desktop: {
               breakpoint: {
@@ -234,10 +234,6 @@ const WorkPage = ({ barState }) => {
       </CarouselWrapper>
     </>
   );
-};
-
-WorkPage.propTypes = {
-  barState: PropTypes.bool
 };
 
 export default WorkPage;

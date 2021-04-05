@@ -47,15 +47,10 @@ export default css`
     left: 0px;
     top: 42%;
   }
-  .react-multiple-carousel__arrow--left::before {
-    content: '<';
-  }
+
   .react-multiple-carousel__arrow--right {
     right: 0;
     top: 42%;
-  }
-  .react-multiple-carousel__arrow--right::before {
-    content: '>';
   }
 
   .react-multi-carousel-dot-list {

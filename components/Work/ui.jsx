@@ -1,6 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
 import { device } from '../../utils/media';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './styles';
 
@@ -388,3 +390,52 @@ export const Button = styled.button`
     border-bottom: none;
   }
 `;
+
+const FontAwesomeIconRight = styled(FontAwesomeIcon)`
+  position: absolute;
+  top: 49vh;
+  right: 0;
+  cursor: pointer;
+  width: 35px !important;
+  height: 35px !important;
+  color: #424242;
+  opacity: 0.5;
+
+  :hover {
+    color: grey;
+    transition: color 0.4s ease;
+  }
+  @media ${device.tablet} {
+    top: unset;
+  }
+`;
+
+const FontAwesomeIconLeft = styled(FontAwesomeIcon)`
+  position: absolute;
+  left: 0;
+  top: 49vh;
+  cursor: pointer;
+  width: 35px !important;
+  height: 35px !important;
+  color: #424242;
+  opacity: 0.5;
+
+  @media ${device.tablet} {
+    top: unset;
+  }
+
+  :hover {
+    color: grey;
+    transition: color 0.4s ease;
+  }
+`;
+
+// eslint-disable-next-line react/prop-types
+export const RightArrow = ({ onClick }) => {
+  return <FontAwesomeIconRight onClick={() => onClick()} icon={faArrowCircleRight} />;
+};
+
+// eslint-disable-next-line react/prop-types
+export const LeftArrow = ({ onClick }) => {
+  return <FontAwesomeIconLeft onClick={() => onClick()} icon={faArrowCircleLeft} />;
+};
