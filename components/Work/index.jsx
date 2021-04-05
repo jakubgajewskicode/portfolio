@@ -177,28 +177,38 @@ const WorkPage = ({ barState }) => {
                     <li>GeolocateControl to process client location</li>
                   </UL>
                   <ButtonsWrap>
-                    <Button>
-                      <a href="/weather">View Demo</a>
-                    </Button>
-                    <Button>
-                      <a href="https://github.com/jakubgajewskicode/portfolio/blob/main/pages/weather/index.jsx">
+                    <form>
+                      <Button type="submit" formAction="/weather">
+                        View Demo
+                      </Button>
+                    </form>
+                    <form>
+                      <Button
+                        type="submit"
+                        formAction="https://github.com/jakubgajewskicode/portfolio/blob/main/pages/weather/index.jsx">
                         View GitHub
-                      </a>
-                    </Button>
+                      </Button>
+                    </form>
                   </ButtonsWrap>
-
                   <div>
                     <H5>Newsletter Blog</H5>
                     <UL>
                       <li>Contentful Headless CMS integreted with Gatsby build</li>
                     </UL>
                     <ButtonsWrap>
-                      <Button>
-                        <a href="https://jakub-playground.vercel.app/">View Demo</a>
-                      </Button>
-                      <Button>
-                        <a href="https://github.com/jakubgajewskicode/blog">View GitHub</a>
-                      </Button>
+                      <form>
+                        <Button type="submit" formAction="https://jakub-playground.vercel.app/">
+                          View Demo
+                        </Button>
+                      </form>
+
+                      <form>
+                        <Button
+                          type="submit"
+                          formAction="https://github.com/jakubgajewskicode/blog">
+                          View GitHub
+                        </Button>
+                      </form>
                     </ButtonsWrap>
                   </div>
                   <H5>Messenger App</H5>
@@ -206,12 +216,16 @@ const WorkPage = ({ barState }) => {
                     <li>React / Firebase</li>
                   </UL>
                   <ButtonsWrap>
-                    <Button>
-                      <a href="https://jakub-playground.vercel.app/">View Demo</a>
-                    </Button>
-                    <Button>
-                      <a href="https://github.com/jakubgajewskicode/blog">View GitHub</a>
-                    </Button>
+                    <form>
+                      <Button type="submit" formAction="https://jakub-playground.vercel.app/">
+                        View Demo
+                      </Button>
+                    </form>
+                    <form>
+                      <Button type="submit" formAction="https://github.com/jakubgajewskicode/blog">
+                        View GitHub
+                      </Button>
+                    </form>
                   </ButtonsWrap>
                 </StyledBody>
               </RightItem>
