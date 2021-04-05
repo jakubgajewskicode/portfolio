@@ -293,29 +293,6 @@ export const StyledDetailLink = styled.li`
 export const CarouselWrapper = styled.section`
   position: relative;
   ${styles};
-
-  @media ${device.tablet} {
-    .react-multiple-carousel__arrow--left {
-      top: unset;
-    }
-    .react-multiple-carousel__arrow--right {
-      top: unset;
-    }
-    .react-multi-carousel-dot-list {
-      position: absolute;
-      top: unset;
-      bottom: 50px;
-      display: flex;
-      left: 0;
-      right: 0px;
-      justify-content: center;
-      margin: auto;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      text-align: center;
-    }
-  }
 `;
 
 export const StyledAnchor = styled.a`

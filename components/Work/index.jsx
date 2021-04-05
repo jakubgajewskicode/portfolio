@@ -190,27 +190,23 @@ const WorkPage = ({ barState }) => {
                       </Button>
                     </form>
                   </ButtonsWrap>
-                  <div>
-                    <H5>Newsletter Blog</H5>
-                    <UL>
-                      <li>Contentful Headless CMS integreted with Gatsby build</li>
-                    </UL>
-                    <ButtonsWrap>
-                      <form>
-                        <Button type="submit" formAction="https://jakub-playground.vercel.app/">
-                          View Demo
-                        </Button>
-                      </form>
+                  <H5>Newsletter Blog</H5>
+                  <UL>
+                    <li>Contentful Headless CMS integreted with Gatsby build</li>
+                  </UL>
+                  <ButtonsWrap>
+                    <form>
+                      <Button type="submit" formAction="https://jakub-playground.vercel.app/">
+                        View Demo
+                      </Button>
+                    </form>
 
-                      <form>
-                        <Button
-                          type="submit"
-                          formAction="https://github.com/jakubgajewskicode/blog">
-                          View GitHub
-                        </Button>
-                      </form>
-                    </ButtonsWrap>
-                  </div>
+                    <form>
+                      <Button type="submit" formAction="https://github.com/jakubgajewskicode/blog">
+                        View GitHub
+                      </Button>
+                    </form>
+                  </ButtonsWrap>
                   <H5>Messenger App</H5>
                   <UL>
                     <li>React / Firebase</li>
@@ -221,6 +217,7 @@ const WorkPage = ({ barState }) => {
                         View Demo
                       </Button>
                     </form>
+
                     <form>
                       <Button type="submit" formAction="https://github.com/jakubgajewskicode/blog">
                         View GitHub
