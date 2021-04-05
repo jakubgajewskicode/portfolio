@@ -38,6 +38,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet" />
+          <link rel="icon" href="/fav.png" />
         </Head>
         <body>
           <Main />

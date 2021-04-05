@@ -24,12 +24,6 @@ const LabsPage = () => {
         </StyledHeader>
         <StyledBody>
           <Body>
-            <p>Weather App</p>
-            <ul>
-              <li>Sending requests to openweathermap API to process weather parameters</li>
-            </ul>
-          </Body>
-          <Body>
             <Link passHref href="https://jakubgajewskicode.github.io/cra-rr/">
               <StyledAnchor>Static website with nav</StyledAnchor>
             </Link>

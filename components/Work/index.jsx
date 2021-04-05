@@ -21,7 +21,6 @@ import {
   StyledTitle,
   UL,
   StyledAnchor3,
-  StyledP,
   Button,
   ButtonsWrap
 } from './ui';
