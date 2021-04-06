@@ -172,7 +172,7 @@ export const LeftItem = styled.aside`
 `;
 
 export const BulbWrap = styled.aside`
-  margin: auto 0;
+  margin: 10vh 0;
   opacity: 0;
 
   img {

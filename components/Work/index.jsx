@@ -215,6 +215,7 @@ const WorkPage = () => {
                     </li>
                     <li>Auth with Google Provider</li>
                     <li>React Hooks</li>
+                    <li>Styled Components</li>
                   </UL>
                   <ButtonsWrap>
                     <form>
@@ -226,7 +227,7 @@ const WorkPage = () => {
                     <form>
                       <Button
                         type="submit"
-                        formAction="https://github.com/jakubgajewskicode/portfolio">
+                        formAction="https://github.com/jakubgajewskicode/portfolio/blob/main/pages/messenger/index.jsx">
                         View GitHub
                       </Button>
                     </form>
