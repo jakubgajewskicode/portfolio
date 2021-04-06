@@ -209,16 +209,24 @@ const WorkPage = () => {
                   <H5>Messenger App</H5>
                   <UL>
                     <li>React / Firebase</li>
+                    <li>
+                      Very Simple App showing how easy is to integrate serverless backend / Auth on
+                      the front end side
+                    </li>
+                    <li>Auth with Google Provider</li>
+                    <li>React Hooks</li>
                   </UL>
                   <ButtonsWrap>
                     <form>
-                      <Button type="submit" formAction="https://jakub-playground.vercel.app/">
+                      <Button type="submit" formAction="/messenger">
                         View Demo
                       </Button>
                     </form>
 
                     <form>
-                      <Button type="submit" formAction="https://github.com/jakubgajewskicode/blog">
+                      <Button
+                        type="submit"
+                        formAction="https://github.com/jakubgajewskicode/portfolio">
                         View GitHub
                       </Button>
                     </form>
