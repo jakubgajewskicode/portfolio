@@ -439,3 +439,9 @@ export const RightArrow = ({ onClick }) => {
 export const LeftArrow = ({ onClick }) => {
   return <FontAwesomeIconLeft onClick={() => onClick()} icon={faArrowCircleLeft} />;
 };
+
+export const ButtonWrapper = styled.div`
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+`;

@@ -22,7 +22,8 @@ import {
   Button,
   ButtonsWrap,
   RightArrow,
-  LeftArrow
+  LeftArrow,
+  ButtonWrapper
 } from './ui';
 
 const WorkPage = () => {
@@ -164,6 +165,15 @@ const WorkPage = () => {
                       </Link>
                     </li>
                   </UL>
+                  <ButtonWrapper>
+                    <form>
+                      <Button
+                        type="submit"
+                        formAction="https://github.com/jakubgajewskicode/portfolio">
+                        View GitHub
+                      </Button>
+                    </form>
+                  </ButtonWrapper>
                   <H5>Precise Weather App</H5>
                   <p> Current and hours forecast for next 3 days</p>
                   <UL>

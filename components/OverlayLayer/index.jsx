@@ -1,9 +1,21 @@
 import Link from 'next/link';
+import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 
 import { Overlay, DetailList, GeneralWrap, LinksWrap, StyledDetailLink, Grid, Item } from './ui';
 
-// eslint-disable-next-line react/prop-types
 const OverlayLayer = ({ barState, setBarState }) => {
+  if (barState) {
+    useEffect(() => {
+      document.body.style = 'overflow-y: hidden';
+    }, []);
+  }
+
+  if (!barState) {
+    useEffect(() => {
+      document.body.style = 'overflow-y: visible';
+    });
+  }
   return (
     <Overlay state={barState}>
       <DetailList state={barState}>
@@ -50,6 +62,11 @@ const OverlayLayer = ({ barState, setBarState }) => {
       </DetailList>
     </Overlay>
   );
+};
+
+OverlayLayer.propTypes = {
+  barState: PropTypes.bool,
+  setBarState: PropTypes.func
 };
 
 export default OverlayLayer;
