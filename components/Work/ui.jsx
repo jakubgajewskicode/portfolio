@@ -405,9 +405,6 @@ const FontAwesomeIconRight = styled(FontAwesomeIcon)`
     color: grey;
     transition: color 0.4s ease;
   }
-  @media ${device.tablet} {
-    top: unset;
-  }
 `;
 
 const FontAwesomeIconLeft = styled(FontAwesomeIcon)`
@@ -419,10 +416,6 @@ const FontAwesomeIconLeft = styled(FontAwesomeIcon)`
   height: 35px !important;
   color: #424242;
   opacity: 0.5;
-
-  @media ${device.tablet} {
-    top: unset;
-  }
 
   :hover {
     color: grey;
