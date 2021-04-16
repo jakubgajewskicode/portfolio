@@ -7,13 +7,13 @@ import { Overlay, DetailList, GeneralWrap, LinksWrap, StyledDetailLink, Grid, It
 const OverlayLayer = ({ barState, setBarState }) => {
   if (barState) {
     useEffect(() => {
-      document.body.style = 'overflow-y: hidden';
-    }, []);
+      document.body.style = 'overflow: hidden;';
+    });
   }
 
   if (!barState) {
     useEffect(() => {
-      document.body.style = 'overflow-y: visible';
+      document.body.style = 'overflow: visiable;';
     });
   }
   return (
