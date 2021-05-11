@@ -41,6 +41,14 @@ const LabsPage = () => {
               <li>Used extensively JavaScript / CSS</li>
             </ul>
           </Body>
+          <Body>
+            <Link passHref href="/ui">
+              <StyledAnchor>Custom UI</StyledAnchor>
+            </Link>
+            <ul>
+              <li>All sort of Custom UI</li>
+            </ul>
+          </Body>
         </StyledBody>
       </RightItem>
       <LeftItem>
