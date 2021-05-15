@@ -1,17 +1,15 @@
-import AboutPage from '../../components/About';
 import Head from 'next/head';
+import AboutPage from '../../components/About';
 
-const About = () => {
-  return (
-    <>
-      <Head>
-        <title>About</title>
-      </Head>
-      <div>
-        <AboutPage />
-      </div>
-    </>
-  );
-};
+const About = () => (
+  <>
+    <Head>
+      <title>About</title>
+    </Head>
+    <div>
+      <AboutPage />
+    </div>
+  </>
+);
 
 export default About;

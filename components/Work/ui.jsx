@@ -1,8 +1,12 @@
 import styled, { keyframes } from 'styled-components';
 
-import { device } from '../../utils/media';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleRight, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowCircleRight,
+  faArrowCircleLeft,
+} from '@fortawesome/free-solid-svg-icons';
+
+import { device } from '../../utils/media';
 
 import styles from './styles';
 
@@ -131,7 +135,8 @@ export const StyledLink = styled.div`
     margin-left: 30px;
 
     ::after {
-      transition: left 0.7s cubic-bezier(0.8, 0, 0.55, 0.94) 0.7s, width 0.7s ease;
+      transition: left 0.7s cubic-bezier(0.8, 0, 0.55, 0.94) 0.7s,
+        width 0.7s ease;
 
       opacity: 1;
       width: 70%;
@@ -211,7 +216,8 @@ export const SideNav = styled.ul`
 
 export const CoverNav = styled.li`
   opacity: ${({ CoverStyle }) => (CoverStyle === true ? `1` : `0.5`)};
-  border-bottom: ${({ CoverStyle }) => (CoverStyle === true ? `1px solid #000;` : `null`)};
+  border-bottom: ${({ CoverStyle }) =>
+    CoverStyle === true ? `1px solid #000;` : `null`};
 
   margin-left: 20px;
   font-size: 11px;
@@ -226,7 +232,8 @@ export const CoverNav = styled.li`
 
 export const GridNav = styled.li`
   opacity: ${({ NavStyle }) => (NavStyle === true ? `0.5` : `1`)};
-  border-bottom: ${({ NavStyle }) => (NavStyle === true ? `null` : `1px solid #000;`)};
+  border-bottom: ${({ NavStyle }) =>
+    NavStyle === true ? `null` : `1px solid #000;`};
   margin-left: 20px;
   font-size: 11px;
   letter-spacing: 1px;
@@ -424,14 +431,14 @@ const FontAwesomeIconLeft = styled(FontAwesomeIcon)`
 `;
 
 // eslint-disable-next-line react/prop-types
-export const RightArrow = ({ onClick }) => {
-  return <FontAwesomeIconRight onClick={() => onClick()} icon={faArrowCircleRight} />;
-};
+export const RightArrow = ({ onClick }) => (
+  <FontAwesomeIconRight onClick={() => onClick()} icon={faArrowCircleRight} />
+);
 
 // eslint-disable-next-line react/prop-types
-export const LeftArrow = ({ onClick }) => {
-  return <FontAwesomeIconLeft onClick={() => onClick()} icon={faArrowCircleLeft} />;
-};
+export const LeftArrow = ({ onClick }) => (
+  <FontAwesomeIconLeft onClick={() => onClick()} icon={faArrowCircleLeft} />
+);
 
 export const ButtonWrapper = styled.div`
   width: 100%;

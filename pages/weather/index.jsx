@@ -1,9 +1,10 @@
 import React, { useState, useRef, useCallback } from 'react';
 import MapGL, { FlyToInterpolator, GeolocateControl } from 'react-map-gl';
 import Geocoder from 'react-map-gl-geocoder';
+import styled from 'styled-components';
 import OpenWeather from '../../components/OpenWeather';
 import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css';
-import styled from 'styled-components';
+
 import { device } from '../../utils/media';
 
 const TOKEN = process.env.NEXT_PUBLIC_MAP_KEY;
@@ -35,34 +36,41 @@ const Map = styled.div`
 
 const geolocateControlStyle = {
   right: 10,
-  top: 10
+  top: 10,
 };
 
 const Weather = () => {
   const [viewport, setViewport] = useState({
     latitude: 0,
     longitude: 0,
-    zoom: 1
+    zoom: 1,
   });
+
   const [coords, setCoords] = useState({
     latitude: 0,
-    longitude: 0
+    longitude: 0,
   });
   const mapRef = useRef();
   const geoCoderRef = useRef();
   const handleViewportChange = useCallback((newViewport) => {
     setViewport(newViewport);
-    setCoords({ latitude: newViewport.latitude, longitude: newViewport.longitude });
+    setCoords({
+      latitude: newViewport.latitude,
+      longitude: newViewport.longitude,
+    });
   }, []);
 
   const handleGeocoderViewportChange = useCallback((newViewport) => {
     const geocoderDefaultOverrides = { transitionDuration: 1000 };
 
-    setCoords({ latitude: newViewport.latitude, longitude: newViewport.longitude });
+    setCoords({
+      latitude: newViewport.latitude,
+      longitude: newViewport.longitude,
+    });
 
     return handleViewportChange({
       ...newViewport,
-      ...geocoderDefaultOverrides
+      ...geocoderDefaultOverrides,
     });
   }, []);
 
@@ -81,7 +89,8 @@ const Weather = () => {
           onViewportChange={handleViewportChange}
           mapboxApiAccessToken={TOKEN}
           width="100%"
-          height="100%">
+          height="100%"
+        >
           <Geocoder
             mapRef={mapRef}
             containerRef={geoCoderRef}
@@ -95,7 +104,7 @@ const Weather = () => {
           <GeolocateControl
             style={geolocateControlStyle}
             positionOptions={{ enableHighAccuracy: true }}
-            trackUserLocation={true}
+            trackUserLocation
             auto
             zoom={5}
           />

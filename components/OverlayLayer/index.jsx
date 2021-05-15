@@ -2,7 +2,15 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 
-import { Overlay, DetailList, GeneralWrap, LinksWrap, StyledDetailLink, Grid, Item } from './ui';
+import {
+  Overlay,
+  DetailList,
+  GeneralWrap,
+  LinksWrap,
+  StyledDetailLink,
+  Grid,
+  Item,
+} from './ui';
 
 const OverlayLayer = ({ barState, setBarState }) => {
   if (barState) {
@@ -24,7 +32,8 @@ const OverlayLayer = ({ barState, setBarState }) => {
             <StyledDetailLink
               onClick={() => {
                 setBarState();
-              }}>
+              }}
+            >
               <Link href="/projects">projects</Link>
             </StyledDetailLink>
           </LinksWrap>
@@ -32,7 +41,8 @@ const OverlayLayer = ({ barState, setBarState }) => {
             <StyledDetailLink
               onClick={() => {
                 setBarState();
-              }}>
+              }}
+            >
               <Link href="/skills">skills</Link>
             </StyledDetailLink>
           </LinksWrap>
@@ -40,7 +50,8 @@ const OverlayLayer = ({ barState, setBarState }) => {
             <StyledDetailLink
               onClick={() => {
                 setBarState();
-              }}>
+              }}
+            >
               <Link href="/labs">labs</Link>
             </StyledDetailLink>
           </LinksWrap>
@@ -48,7 +59,8 @@ const OverlayLayer = ({ barState, setBarState }) => {
             <StyledDetailLink
               onClick={() => {
                 setBarState();
-              }}>
+              }}
+            >
               <Link href="/about">about</Link>
             </StyledDetailLink>
           </LinksWrap>
@@ -66,7 +78,7 @@ const OverlayLayer = ({ barState, setBarState }) => {
 
 OverlayLayer.propTypes = {
   barState: PropTypes.bool,
-  setBarState: PropTypes.func
+  setBarState: PropTypes.func,
 };
 
 export default OverlayLayer;

@@ -43,12 +43,15 @@ export const TopBar = styled.span`
   width: 100%;
   height: 1px;
   z-index: 10;
-  background-color: ${({ topChanged }) => (topChanged === true ? `#ffffff;` : `#000;`)};
+  background-color: ${({ topChanged }) =>
+    topChanged === true ? `#ffffff;` : `#000;`};
   transition: transform 400ms cubic-bezier(0.8, 0, 0.55, 0.94),
     background-color 1.1s cubic-bezier(0.8, 0, 0.55, 0.94);
   transform-origin: 100% 0;
   transform: ${({ topChanged }) =>
-    topChanged === true ? `translate3d(-5px, 3px, 0) rotate(-45deg)` : `translate3d(0, 9px, 0)`};
+    topChanged === true
+      ? `translate3d(-5px, 3px, 0) rotate(-45deg)`
+      : `translate3d(0, 9px, 0)`};
 `;
 
 export const BottomBar = styled.span`
@@ -58,10 +61,13 @@ export const BottomBar = styled.span`
   width: 100%;
   height: 1px;
   z-index: 10;
-  background-color: ${({ bottomChanged }) => (bottomChanged === true ? `#ffffff;` : `#000;`)};
+  background-color: ${({ bottomChanged }) =>
+    bottomChanged === true ? `#ffffff;` : `#000;`};
   transition: transform 400ms cubic-bezier(0.8, 0, 0.55, 0.94),
     background-color 1.1s cubic-bezier(0.8, 0, 0.55, 0.94);
   transform-origin: 100% 100%;
   transform: ${({ bottomChanged }) =>
-    bottomChanged === true ? `translate3d(-5px, -3px, 0) rotate(45deg)` : `translate3d(0, 0px, 0)`};
+    bottomChanged === true
+      ? `translate3d(-5px, -3px, 0) rotate(45deg)`
+      : `translate3d(0, 0px, 0)`};
 `;

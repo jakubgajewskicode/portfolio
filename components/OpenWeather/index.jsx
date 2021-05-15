@@ -10,7 +10,7 @@ import {
   faCloudShowersHeavy,
   faSnowflake,
   faSun,
-  faSmog
+  faSmog,
 } from '@fortawesome/free-solid-svg-icons';
 
 import ForecastHour from './ForecastHour';
@@ -26,7 +26,7 @@ import {
   Text,
   ForecastWrapper,
   Forecast,
-  Grid
+  Grid,
 } from './ui';
 
 const OpenWeather = ({ coords }) => {
@@ -56,10 +56,10 @@ const OpenWeather = ({ coords }) => {
       axios({
         method: 'get',
         url: URL,
-        validateStatus: false
+        validateStatus: false,
       })
         .then((res) => {
-          if (res.statusText == 'OK') {
+          if (res.statusText === 'OK') {
             setTemp(res.data.current.temp);
             setTempHum(res.data.current.humidity);
             setWind(res.data.current.wind_speed);
@@ -93,10 +93,10 @@ const OpenWeather = ({ coords }) => {
       axios({
         method: 'get',
         url: cityURL,
-        validateStatus: false
+        validateStatus: false,
       })
         .then((res) => {
-          if (res.statusText == 'OK') {
+          if (res.statusText === 'OK') {
             setRegion(res.data[0].name);
             setCountry(res.data[0].country);
           } else {
@@ -139,24 +139,32 @@ const OpenWeather = ({ coords }) => {
     'September',
     'October',
     'Nocvember',
-    'December'
+    'December',
   ];
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const days = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
   const currentDate = new Date();
   const date = `${days[currentDate.getDay()]} ${currentDate.getDate()} ${
     months[currentDate.getMonth()]
   }`;
 
   const getTime = (time) => {
-    var getRightTime = new Date(time * 1000);
-    var hours = getRightTime.getHours();
-    var minutes = '0' + getRightTime.getMinutes();
-    var formattedTime = hours + ':' + minutes.substr(-2);
+    const getRightTime = new Date(time * 1000);
+    const hoursTime = getRightTime.getHours();
+    const minutes = `0${getRightTime.getMinutes()}`;
+    const formattedTime = `${hoursTime}:${minutes.substr(-2)}`;
     return <div>{formattedTime}</div>;
   };
 
   const getDay = (day) => {
-    var dayTest = new Date(day * 1000);
+    const dayTest = new Date(day * 1000);
     const day2 = dayTest.getDate();
     return <span>{day2}</span>;
   };
@@ -246,8 +254,8 @@ const OpenWeather = ({ coords }) => {
 OpenWeather.propTypes = {
   coords: PropTypes.shape({
     latitude: PropTypes.number,
-    longitude: PropTypes.number
-  })
+    longitude: PropTypes.number,
+  }),
 };
 
 export default OpenWeather;

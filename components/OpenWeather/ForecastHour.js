@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { SmallLabel } from './ui';
-import { Text } from './ui';
+import { SmallLabel, Text } from './ui';
 import { device } from '../../utils/media';
 
 const ForecastWrapper = styled.div`
@@ -59,7 +58,7 @@ ForecastHour.propTypes = {
   month: PropTypes.object,
   day: PropTypes.object,
   hour: PropTypes.object,
-  icon: PropTypes.string
+  icon: PropTypes.string,
 };
 
 export default ForecastHour;

@@ -1,17 +1,15 @@
-import CustomUI from '../../components/Custom SVG Arrows';
 import Head from 'next/head';
+import CustomUI from '../../components/Custom SVG Arrows';
 
-const UI = () => {
-  return (
-    <>
-      <Head>
-        <title>UI</title>
-      </Head>
-      <div>
-        <CustomUI />
-      </div>
-    </>
-  );
-};
+const UI = () => (
+  <>
+    <Head>
+      <title>UI</title>
+    </Head>
+    <div>
+      <CustomUI />
+    </div>
+  </>
+);
 
 export default UI;

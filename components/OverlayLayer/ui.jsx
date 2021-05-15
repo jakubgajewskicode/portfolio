@@ -56,7 +56,8 @@ export const StyledLink2 = styled.li`
     font-size: 18vmin;
     text-decoration: none;
     color: #000000;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff;
     transition: text-shadow 400ms cubic-bezier(0.8, 0, 0.55, 0.94),
       color 400ms cubic-bezier(0.8, 0, 0.55, 0.94);
 

@@ -129,7 +129,8 @@ export const StyledLink = styled.div`
     margin-left: 30px;
 
     ::after {
-      transition: left 0.7s cubic-bezier(0.8, 0, 0.55, 0.94) 0.7s, width 0.7s ease;
+      transition: left 0.7s cubic-bezier(0.8, 0, 0.55, 0.94) 0.7s,
+        width 0.7s ease;
 
       opacity: 1;
       width: 70%;

@@ -16,7 +16,7 @@ class MyDocument extends Document {
               </>
             ),
           // useful for wrapping in a per-page basis
-          enhanceComponent: (Component) => Component
+          enhanceComponent: (Component) => Component,
         });
       // Run the parent `getInitialProps`, it now includes the custom `renderPage`
       const initialProps = await Document.getInitialProps(ctx);
@@ -27,17 +27,21 @@ class MyDocument extends Document {
             {initialProps.styles}
             {sheet.getStyleElement()}
           </>
-        )
+        ),
       };
     } finally {
       sheet.seal();
     }
   }
+
   render() {
     return (
       <Html lang="en">
         <Head>
-          <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet" />
+          <link
+            href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css"
+            rel="stylesheet"
+          />
           <link rel="icon" href="/fav.png" />
         </Head>
         <body>

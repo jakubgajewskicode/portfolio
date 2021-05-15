@@ -41,7 +41,13 @@ export const SVGWrap = styled.span`
 `;
 
 export const RightSVGArrows = (
-  <svg width="81" height="45" viewBox="0 0 81 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    width="81"
+    height="45"
+    viewBox="0 0 81 45"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g id="trangles" clipPath="url(#clip0)">
       <g id="darkGroup">
         <path

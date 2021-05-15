@@ -16,19 +16,19 @@ const APP_ID = process.env.NEXT_PUBLIC_APP_ID;
 
 const fireBaseConfig = {
   apiKey: FIREBASE_API_KEY,
-  appId: APP_ID
+  appId: APP_ID,
 };
 
 const { apiKey, appId } = fireBaseConfig;
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: apiKey,
+    apiKey,
     authDomain: 'chat-7d1fe.firebaseapp.com',
     databaseURL: 'https://chat-7d1fe.firebaseio.com',
     projectId: 'chat-7d1fe',
     storageBucket: 'chat-7d1fe.appspot.com',
     messagingSenderId: '614752894781',
-    appId: appId
+    appId,
   });
 }
 
@@ -125,7 +125,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: #282c34; /* Green */
+  background-color: #282c34;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -160,7 +160,9 @@ function Chat() {
     const signOutWithGoogle = () => {
       auth.signOut();
     };
-    return auth.currentUser && <Button onClick={signOutWithGoogle}>Sign Out</Button>;
+    return (
+      auth.currentUser && <Button onClick={signOutWithGoogle}>Sign Out</Button>
+    );
   };
 
   const ChatRoom = () => {
@@ -178,7 +180,7 @@ function Chat() {
         text: formValue,
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
         uid,
-        photoURL
+        photoURL,
       });
       setFormValue('');
 
@@ -188,8 +190,9 @@ function Chat() {
     return (
       <>
         <Messages>
-          {messages && messages.map((msg, i) => <ChatMessage message={msg} key={i} />)}
-          <span ref={fake}></span>
+          {messages &&
+            messages.map((msg) => <ChatMessage message={msg} key={msg.id} />)}
+          <span ref={fake} />
         </Messages>
 
         <Form onSubmit={sendMessage}>
@@ -208,14 +211,19 @@ function Chat() {
   };
 
   const ChatMessage = (props) => {
-    const { text, uid, photoURL } = props.message;
+    const { message } = props;
+
+    const { text, uid, photoURL } = message;
 
     const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
     return (
       <Span value={`${messageClass}`}>
         <Image
-          src={photoURL || `https://avatars.dicebear.com/api/male/john.svg?mood[]=happy`}
+          src={
+            photoURL ||
+            `https://avatars.dicebear.com/api/male/john.svg?mood[]=happy`
+          }
           alt=""
         />
         <Text value={`${messageClass}`}>{text}</Text>
@@ -227,8 +235,8 @@ function Chat() {
     message: PropTypes.shape({
       text: PropTypes.string,
       uid: PropTypes.string,
-      photoURL: PropTypes.string
-    })
+      photoURL: PropTypes.string,
+    }),
   };
 
   return (

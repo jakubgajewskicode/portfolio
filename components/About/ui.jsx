@@ -49,12 +49,10 @@ export const H1 = styled.h1`
 
   @media ${device.tablet} {
     font-size: 50px;
-    /* width: min-content; */
     margin-right: 20px;
   }
 
   @media ${device.laptop} {
-    /* font-size: 60px; */
     margin-right: 123px;
     font-size: 55px;
     max-width: 1200px;
@@ -128,7 +126,8 @@ export const StyledLink = styled.div`
     margin-left: 30px;
 
     ::after {
-      transition: left 0.7s cubic-bezier(0.8, 0, 0.55, 0.94) 0.7s, width 0.7s ease;
+      transition: left 0.7s cubic-bezier(0.8, 0, 0.55, 0.94) 0.7s,
+        width 0.7s ease;
 
       opacity: 1;
       width: 70%;

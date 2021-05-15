@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
 
 MyApp.propTypes = {
   Component: PropTypes.any,
-  pageProps: PropTypes.any
+  pageProps: PropTypes.any,
 };
 
 export default MyApp;

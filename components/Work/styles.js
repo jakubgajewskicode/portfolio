@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+
 export default css`
   .react-multi-carousel-list {
     display: flex;
