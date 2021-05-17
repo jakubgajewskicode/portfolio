@@ -30,7 +30,7 @@ const AboutPage = () => (
       <StyledBody>
         <Body>Hey, I am Jakub Gajewski.</Body>
         <MainBody>
-          I am professional front end developer since January 2019. My passion
+          I am professional front end developer since January 2020. My passion
           for digital technology continually drives me to advance my skill set
           as a software developer. With an analytical mindset, strong
           communication and front end development skills, I thrive in
