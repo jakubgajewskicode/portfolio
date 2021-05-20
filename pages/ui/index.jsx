@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import CustomUI from '../../components/Custom SVG Arrows';
+import CustomUI from '../../components/UI';
 
 const UI = () => (
   <>
