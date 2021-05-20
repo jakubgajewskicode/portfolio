@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import {
   Main,
   LeftItem,
@@ -9,7 +7,8 @@ import {
   H1,
   Body,
   StyledBody,
-  StyledAnchor,
+  ButtonWrapper,
+  Button,
 } from './ui';
 
 import About from '../../public/Svgs/About.svg';
@@ -23,33 +22,43 @@ const LabsPage = () => (
       </StyledHeader>
       <StyledBody>
         <Body>
-          <Link passHref href="https://jakubgajewskicode.github.io/cra-rr/">
-            <StyledAnchor>Static website with nav</StyledAnchor>
-          </Link>
+          <H5>Static website with nav</H5>
           <ul>
-            <li>
-              <p>Based on React Router</p>
-            </li>
+            <li>Based on React Router</li>
           </ul>
-        </Body>
-        <Body>
-          <Link
-            passHref
-            href="https://jakubgajewskicode.github.io/oop-js-game/"
-          >
-            <StyledAnchor>Game - One Handed Bandit</StyledAnchor>
-          </Link>
+          <ButtonWrapper>
+            <form>
+              <Button
+                type="submit"
+                formAction="https://jakubgajewskicode.github.io/cra-rr/"
+              >
+                View Demo
+              </Button>
+            </form>
+          </ButtonWrapper>
+
+          <H5>Game - One Handed Bandit</H5>
           <ul>
             <li>Used extensively JavaScript / CSS</li>
           </ul>
-        </Body>
-        <Body>
-          <Link passHref href="/ui">
-            <StyledAnchor>Custom UI</StyledAnchor>
-          </Link>
-          <ul>
-            <li>All sort of Custom UI</li>
-          </ul>
+          <ButtonWrapper>
+            <form>
+              <Button
+                type="submit"
+                formAction="https://jakubgajewskicode.github.io/oop-js-game/"
+              >
+                View Demo
+              </Button>
+            </form>
+          </ButtonWrapper>
+          <H5>All sort of Custom UI</H5>
+          <ButtonWrapper>
+            <form>
+              <Button type="submit" formAction="/ui">
+                View examples here
+              </Button>
+            </form>
+          </ButtonWrapper>
         </Body>
       </StyledBody>
     </RightItem>
