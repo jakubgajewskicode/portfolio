@@ -75,7 +75,13 @@ const WorkPage = () => (
       >
         <Main>
           <>
-            <RightItem>
+            <RightItem
+              onMouseDown={(event) => {
+                if (event.preventDefault) {
+                  event.preventDefault();
+                }
+              }}
+            >
               <StyledHeader>
                 <H5>new e-commerce</H5>
                 <H1>
@@ -145,13 +151,25 @@ const WorkPage = () => (
               </StyledBody>
             </RightItem>
             <LeftItem>
-              <Bike />
+              <Bike
+                onMouseDown={(event) => {
+                  if (event.preventDefault) {
+                    event.preventDefault();
+                  }
+                }}
+              />
             </LeftItem>
           </>
         </Main>
         <Main>
           <>
-            <RightItem>
+            <RightItem
+              onMouseDown={(event) => {
+                if (event.preventDefault) {
+                  event.preventDefault();
+                }
+              }}
+            >
               <StyledHeader>
                 <H5>side projects</H5>
                 <H1>Apps</H1>
@@ -261,7 +279,13 @@ const WorkPage = () => (
                 </ButtonsWrap>
               </StyledBody>
             </RightItem>
-            <BulbWrap>
+            <BulbWrap
+              onMouseDown={(event) => {
+                if (event.preventDefault) {
+                  event.preventDefault();
+                }
+              }}
+            >
               <img src={Zarowka} alt="bulbimage" />
             </BulbWrap>
           </>
