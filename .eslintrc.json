@@ -10,7 +10,8 @@
        "import/no-extraneous-dependencies": "off",
        "no-unused-vars": "warn",
        "react/require-default-props": "off",
-       "react/forbid-prop-types": "off"
+       "react/forbid-prop-types": "off",
+       "new-cap": ["error", { "newIsCap": false }]
     },
     "env": {
         "browser": true,

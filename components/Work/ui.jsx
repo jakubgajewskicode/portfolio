@@ -157,9 +157,6 @@ export const StyledLink = styled.div`
 `;
 
 export const LeftItem = styled.aside`
-  margin: auto 0;
-  opacity: 0;
-
   svg {
     height: 100%;
     width: 100%;
@@ -170,9 +167,6 @@ export const LeftItem = styled.aside`
 
   @media ${device.tablet} {
     display: block;
-    animation: 1200ms ${ImageIn} linear;
-
-    opacity: 1;
   }
 `;
 
